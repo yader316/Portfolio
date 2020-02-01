@@ -1,0 +1,14 @@
+mixin Header
+  header.marginBottom.headerContainer
+    .container
+      br
+      nav.navbar.navbar-expand-lg.navbar-light
+        a.navbar-brand(href="#") 
+          img(src="public/img/logo.png" alt="logo").headerContainer__imgLogo
+        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbar-1") #[span.navbar-toggler-icon]
+        .collapse.navbar-collapse#navbar-1
+          ul.navbar-nav.mr-auto
+            +Items('Home','/')
+            +Items('Projects','#')
+            +MenuDropdown('About Me','Acquired Studies','CV Download','#','#')
+            +Items('Contact Me','about.html')

@@ -1,0 +1,148 @@
+/* line 1, dev/sass/style.css */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 9, dev/sass/style.css */
+.body-container {
+  overflow-x: hidden;
+}
+
+/* line 12, dev/sass/style.css */
+.progressbar__round {
+  min-height: 255px;
+  margin-top: 30px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* line 18, dev/sass/style.css */
+.progressbar__circleContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  font-size: 40px;
+  color: #212121;
+  font-weight: 100;
+}
+
+/* line 28, dev/sass/style.css */
+.progressbar__title {
+  display: block;
+  color: #999;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+/* line 34, dev/sass/style.css */
+.progressbar__container {
+  margin-top: 50px;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+  border: 2px solid #fff;
+  box-shadow: 0 0 5px .5px #999;
+}
+
+/* line 43, dev/sass/style.css */
+.main-wrapper {
+  width: 100%;
+  position: relative;
+  background-image: url("../../public/img/elipse2.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 660px 88%;
+  padding-bottom: 4rem;
+}
+
+/* line 52, dev/sass/style.css */
+.marginBottom {
+  margin-bottom: 2rem;
+}
+
+/* line 55, dev/sass/style.css */
+.eje {
+  border: 2px solid red;
+}
+
+/* line 58, dev/sass/style.css */
+.photoContainer {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+/* line 61, dev/sass/style.css */
+.photoContainer__img {
+  width: 70%;
+  height: 400px;
+  background-color: gray;
+  border: 20px solid white;
+  border-radius: 50%;
+}
+
+@media (max-width: 1199.98px) {
+  /* line 69, dev/sass/style.css */
+  .main-wrapper {
+    background-size: 100%;
+    background-position: 547px 83%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  /* line 74, dev/sass/style.css */
+  .main-wrapper {
+    background-size: 90%;
+    background-position: 433px 140%;
+  }
+  /* line 77, dev/sass/style.css */
+  .photoContainer__img {
+    width: 85%;
+    height: 335px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* line 82, dev/sass/style.css */
+  .main-wrapper {
+    background: none;
+  }
+  /* line 84, dev/sass/style.css */
+  .headerContainer__imgLogo {
+    width: 230px;
+  }
+  /* line 86, dev/sass/style.css */
+  .photoContainer__img {
+    border: 20px solid #0fbf61;
+    background-color: #fff;
+    box-shadow: 0 0 5px 0 #fff;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* line 92, dev/sass/style.css */
+  .headerContainer__imgLogo {
+    width: 150px;
+  }
+  /* line 94, dev/sass/style.css */
+  .photoContainer {
+    background-color: #0fbf61;
+    padding: 1rem 0;
+  }
+  /* line 97, dev/sass/style.css */
+  .photoContainer__img {
+    background-color: gray;
+    border: 20px solid white;
+    box-shadow: 0 0 5px 0 #fff;
+  }
+}

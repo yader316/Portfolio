@@ -1,0 +1,1 @@
+$(".progressbar__round").circleProgress({fill:{color:"#0fbf61"}}).on("circle-animation-progress",function(r,i,o){$(this).find(".progressbar__circleContainer").text(String(o.toFixed(2)).substr(2)+"%")});

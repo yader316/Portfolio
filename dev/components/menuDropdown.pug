@@ -1,0 +1,7 @@
+mixin MenuDropdown(item,subItems1,subItems2, link1,link2)
+  li.nav-item.dropdown 
+    a(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false").nav-link.dropdown-toggle#navbarDropdown #{item}
+    div(class="dropdown-menu" aria-labelledby="navbarDropdown")
+      a(href=`${link1}`).dropdown-item #{subItems1}
+      a(href=`${link2}`).dropdown-item #{subItems2}
+

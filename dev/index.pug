@@ -1,0 +1,48 @@
+extends include/template
+
+append config
+  -siteName='Home'
+prepend styles
+//-  link de estilo
+block content
+  main.main-wrapper
+    +Header
+    br
+    .container
+      section.row 
+        .col-xs-12.col-sm-6.col-md-6
+          a(href="#").btn.btn-success.btn-lg.disabled.marginBottom Welcome! I'M
+          h1 Yader Mendoza Balmaceda
+          h3.marginBottom: ins Web Developer
+          p.marginBottom  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          .container.marginBottom 
+            button(type="button").btn.btn-outline-success.btn-lg Hire Me
+            button(type="button").btn.btn-outline-success.btn-lg Explore
+        .col-xs-12.col-sm-6.col-md-6
+          .photoContainer
+            img(src="public/img/foto.png", alt="photo perfil").photoContainer__img
+  section.container.progressbar__container
+    h1 Acquired Learning
+    .dropdown-divider
+    .row
+      +ProgressBar('HTML5','html-5.png','0.85')
+      +ProgressBar('CSS3','css-3.png','0.85')
+      +ProgressBar('JavaScript','js.png','0.70')
+      +ProgressBar('PUG','pug.png','0.85')
+      +ProgressBar('SASS','sass.png','0.85')
+      +ProgressBar('GIT','git.png','0.70')
+      //- +ProgressBar('GULP','gulp.png','0.70')
+      +ProgressBar('REACT','react.png','0.50')
+      +ProgressBar('BOOTSTRAP','bootstrap.png','0.67')
+
+
+
+
+
+
+
+
+
+append script
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js")
+  script(src="public/js/progressBar.js")

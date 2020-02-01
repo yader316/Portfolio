@@ -1,0 +1,5 @@
+$rutaImg: '../../public/img/';
+
+@function imgUrl($imagen){
+  @return url($rutaImg + $imagen);
+}
