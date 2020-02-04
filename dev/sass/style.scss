@@ -103,7 +103,15 @@
     };
   }
 }
-
+// para ipadpro que es 1024 
+@media (max-width: 1024px) { 
+  .main-wrapper{
+    background: {
+      size: 100%;
+      position: 488px 98%;
+    };
+  }
+}
 // Medium devices (tablets, less than 992px) md
 @media (max-width: 991.98px) { 
   .main-wrapper{
@@ -119,7 +127,21 @@
     }
   } 
 }
-
+// modo telefono girado de 823px
+@media (max-width: 823px) { 
+  .main-wrapper{
+    background: {
+      position: 335px -74px;;
+      attachment: relative;
+    };
+  }
+  .aboutMe{
+    &__circle{
+      width: 140px;
+      left: -39px;
+    }
+  }
+}
 // Small devices (landscape phones, less than 768px) sm
 @media (max-width: 768px) { 
   .main-wrapper{
@@ -142,6 +164,13 @@
       display: none;
     }
   } 
+}
+// telefono girado en 736
+@media (max-width: 736px) {
+  .btnHire,
+  .btnExplore{
+    font-size: 1.2rem;
+  }
 }
 // Extra small devices (portrait phones, less than 576px) xs
 @media (max-width: 575.98px) {

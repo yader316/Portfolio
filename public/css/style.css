@@ -180,69 +180,98 @@
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1024px) {
   /* line 123, dev/sass/style.css */
+  .main-wrapper {
+    background-size: 100%;
+    background-position: 488px 98%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  /* line 128, dev/sass/style.css */
   .main-wrapper {
     background-position: 437px 158%;
     background-attachment: relative;
   }
-  /* line 126, dev/sass/style.css */
+  /* line 131, dev/sass/style.css */
   .photoContainer__img {
     width: 85%;
     height: 335px;
   }
 }
 
-@media (max-width: 768px) {
-  /* line 131, dev/sass/style.css */
+@media (max-width: 823px) {
+  /* line 136, dev/sass/style.css */
   .main-wrapper {
-    background: none;
-  }
-  /* line 133, dev/sass/style.css */
-  .headerContainer__imgLogo {
-    width: 230px;
-  }
-  /* line 135, dev/sass/style.css */
-  .photoContainer__img {
-    border: 20px solid #0fbf61;
-    background-color: #fff;
-    box-shadow: 0 0 5px 0 #fff;
+    background-position: 335px -74px;
+    background-attachment: relative;
   }
   /* line 139, dev/sass/style.css */
   .aboutMe__circle {
-    display: none;
+    width: 140px;
+    left: -39px;
   }
 }
 
-@media (max-width: 575.98px) {
-  /* line 143, dev/sass/style.css */
-  .headerContainer__imgLogo {
-    width: 150px;
+@media (max-width: 768px) {
+  /* line 144, dev/sass/style.css */
+  .main-wrapper {
+    background: none;
   }
-  /* line 145, dev/sass/style.css */
-  .photoContainer {
-    background-color: #0fbf61;
-    padding: 1rem 0;
+  /* line 146, dev/sass/style.css */
+  .headerContainer__imgLogo {
+    width: 230px;
   }
   /* line 148, dev/sass/style.css */
   .photoContainer__img {
-    background-color: gray;
-    border: 20px solid white;
+    border: 20px solid #0fbf61;
+    background-color: #fff;
     box-shadow: 0 0 5px 0 #fff;
   }
   /* line 152, dev/sass/style.css */
   .aboutMe__circle {
     display: none;
   }
-  /* line 154, dev/sass/style.css */
+}
+
+@media (max-width: 736px) {
+  /* line 156, dev/sass/style.css */
+  .btnHire,
+  .btnExplore {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* line 161, dev/sass/style.css */
+  .headerContainer__imgLogo {
+    width: 150px;
+  }
+  /* line 163, dev/sass/style.css */
+  .photoContainer {
+    background-color: #0fbf61;
+    padding: 1rem 0;
+  }
+  /* line 166, dev/sass/style.css */
+  .photoContainer__img {
+    background-color: gray;
+    border: 20px solid white;
+    box-shadow: 0 0 5px 0 #fff;
+  }
+  /* line 170, dev/sass/style.css */
+  .aboutMe__circle {
+    display: none;
+  }
+  /* line 172, dev/sass/style.css */
   .progressbar__containerCircleProgress, .progressbar__btnView {
     display: none;
   }
-  /* line 156, dev/sass/style.css */
+  /* line 174, dev/sass/style.css */
   .progressbar__titlePorcentaje {
     margin-bottom: 0;
   }
-  /* line 158, dev/sass/style.css */
+  /* line 176, dev/sass/style.css */
   .progressbar__sizeTitlePorcentaje {
     height: 30px;
   }
