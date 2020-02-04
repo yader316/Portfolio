@@ -1,6 +1,6 @@
-mixin ProgressBar(title,img,porcentage)
-  .progressbar.col-xs-12.col-sm-6.col-md-4.col-lg-3
-    div(class="progressbar__round" data-value=`${porcentage}` data-size="200" data-thickness="12")
-      strong.progressbar__circleContainer
-      span.progressbar__title #[img(src=`public/img/icon/${img}`, alt="")] #{title}
-        
+mixin ProgressBar(title,img,porcentage,clase,id)
+  .col-lg-3.col-md-4.col-sm-6.col-xs-12
+    div(class=`progressbar ${clase}` id=`${id}`)
+      div(class="progressbar__round" data-value=`${porcentage}` data-size="200" data-thickness="12")
+        strong.progressbar__circleContainer
+        span.progressbar__title #[img(src=`public/img/icon/${img}`, alt=`icon ${title}`)] #{title}

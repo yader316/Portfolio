@@ -1,0 +1,7 @@
+mixin card(title,image,url,clase,id)
+  .col-lg-3.col-md-4.col-sm-6.col-xs-12 
+    div(class=`card text-center ${clase}` id=`${id}` style="margin-bottom: 1rem;  ")
+      img(src=`public/img/pages/${image}`, class="card-img-top" style="height:150px;" alt="")
+      .card-body
+        h5.card-title.text-center #{title}
+        a(href=`${url}` class="btn btn-success text-center") Go Somewhere
