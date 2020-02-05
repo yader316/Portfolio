@@ -8,7 +8,7 @@ mixin Header
         button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbar-1") #[span.navbar-toggler-icon]
         .collapse.navbar-collapse#navbar-1
           ul.navbar-nav.mr-auto
-            +Items('Home','/')
+            +Items('Home','#home')
             +Items('Projects','#projects')
             +MenuDropdown('About Me','Professional Skills','Personal References','CV Download','#studies','#testimonial','public/documen/cv.pdf')
             +Items('Contact Me','#contact')
