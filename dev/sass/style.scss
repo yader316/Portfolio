@@ -69,6 +69,7 @@
   }
   &__img{
     margin-top: 2rem;
+    box-shadow: 0 0 5px 1px gray;
   }
   &__information{
     padding: 3rem;
@@ -93,7 +94,36 @@
     margin-bottom: 0;
   }
 }
+// style contact me
+.contactMe{
+  &__imgContainer{
+    box-shadow: 0 0 5px 1px gray;
+  }
+  &__img{
+    width: 100%;
+    padding: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0 0 5px 1px gray;
+  }
+  &__txtArea{
 
+    resize: none;
+  }
+  &__title{
+    text-transform: uppercase;
+  }
+  &__subTitle,
+  &__label{
+    text-transform: capitalize;
+  }
+}
+// style- footer container
+.footerContainer{
+  &__containerPrincipal{
+    padding-top: 3rem;
+    box-shadow: 0 0 10px 2px #80808088;
+  }
+}
 // Large devices (desktops, less than 1200px) lg
 @media (max-width: 1199.98px) { 
   .main-wrapper{
@@ -126,6 +156,11 @@
       height: 335px;
     }
   } 
+  .aboutMe{
+    &__subTitle{
+      font-size: 3rem;
+    }
+  }
 }
 // modo telefono girado de 823px
 @media (max-width: 823px) { 
@@ -207,6 +242,12 @@
     }
   }
 }
+
+// perfil de about me en español
+// !! Mi nombre completo es Yader Alexander Mendoza Balmaceda, tengo 27 año de edad, actualmente me dedico a desarrollar página web como Frontend, resido en Managua – Nicaragua.
+
+// Perfil:
+// Contribuir al diseño y desarrollo de sitio web y aplicaciones web, de acuerdo con mis habilidades, conocimientos y experiencia.
 
 
 

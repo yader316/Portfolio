@@ -10,5 +10,36 @@ mixin Header
           ul.navbar-nav.mr-auto
             +Items('Home','/')
             +Items('Projects','#projects')
-            +MenuDropdown('About Me','Acquired Studies','Personal References','CV Download','#studies','#testimonial','public/documen/cv.pdf')
-            +Items('Contact Me','contact.html')
+            +MenuDropdown('About Me','Professional Skills','Personal References','CV Download','#studies','#testimonial','public/documen/cv.pdf')
+            +Items('Contact Me','#contact')
+          ul.nav.justify-content-end.d-md-none.d-lg-block
+            li.nav-item
+              button(
+                type="button" 
+                class="btn btn-link" 
+                data-toggle="popover"
+                data-trigger="focus" 
+                data-placement="left" 
+                title="Email" 
+                data-content="yadtais316@gmail.com" 
+              ) #[img(src="public/img/icon/gmail.png", alt="gmail icon")]
+            li.nav-item
+              button(
+                type="button" 
+                class="btn btn-link" 
+                data-toggle="popover"
+                data-trigger="focus" 
+                data-placement="left" 
+                title="Whatsapp" 
+                data-content="8326 - 1118" 
+              ) #[img(src="public/img/icon/whatsapp.png", alt="gmail icon")]   
+            li.nav-item
+              button(
+                type="button" 
+                class="btn btn-link" 
+                data-toggle="popover"
+                data-trigger="focus" 
+                data-placement="left" 
+                title="Facebook" 
+                data-content="www.facebook.com/yader.mendoza.33" 
+              ) #[img(src="public/img/icon/facebook.png", alt="facebook icon")]

@@ -147,19 +147,20 @@
 /* line 101, dev/sass/style.css */
 .aboutMe__img {
   margin-top: 2rem;
+  box-shadow: 0 0 5px 1px gray;
 }
 
-/* line 103, dev/sass/style.css */
+/* line 104, dev/sass/style.css */
 .aboutMe__information {
   padding: 3rem;
 }
 
-/* line 106, dev/sass/style.css */
+/* line 107, dev/sass/style.css */
 .projectContainer {
   text-align: center;
 }
 
-/* line 108, dev/sass/style.css */
+/* line 109, dev/sass/style.css */
 .projectContainer__backgroundPointerImage {
   background-image: url("../../public/img/background-point.png");
   background-repeat: no-repeat;
@@ -167,13 +168,47 @@
   padding-bottom: 3rem;
 }
 
-/* line 114, dev/sass/style.css */
+/* line 115, dev/sass/style.css */
 .testimonialContainer__title {
   margin-bottom: 0;
 }
 
+/* line 118, dev/sass/style.css */
+.contactMe__imgContainer {
+  box-shadow: 0 0 5px 1px gray;
+}
+
+/* line 121, dev/sass/style.css */
+.contactMe__img {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 5px 1px gray;
+}
+
+/* line 127, dev/sass/style.css */
+.contactMe__txtArea {
+  resize: none;
+}
+
+/* line 130, dev/sass/style.css */
+.contactMe__title {
+  text-transform: uppercase;
+}
+
+/* line 133, dev/sass/style.css */
+.contactMe__subTitle, .contactMe__label {
+  text-transform: capitalize;
+}
+
+/* line 136, dev/sass/style.css */
+.footerContainer__containerPrincipal {
+  padding-top: 3rem;
+  box-shadow: 0 0 10px 2px #80808088;
+}
+
 @media (max-width: 1199.98px) {
-  /* line 118, dev/sass/style.css */
+  /* line 141, dev/sass/style.css */
   .main-wrapper {
     background-size: 100%;
     background-position: 547px 83%;
@@ -181,7 +216,7 @@
 }
 
 @media (max-width: 1024px) {
-  /* line 123, dev/sass/style.css */
+  /* line 146, dev/sass/style.css */
   .main-wrapper {
     background-size: 100%;
     background-position: 488px 98%;
@@ -189,25 +224,29 @@
 }
 
 @media (max-width: 991.98px) {
-  /* line 128, dev/sass/style.css */
+  /* line 151, dev/sass/style.css */
   .main-wrapper {
     background-position: 437px 158%;
     background-attachment: relative;
   }
-  /* line 131, dev/sass/style.css */
+  /* line 154, dev/sass/style.css */
   .photoContainer__img {
     width: 85%;
     height: 335px;
   }
+  /* line 157, dev/sass/style.css */
+  .aboutMe__subTitle {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 823px) {
-  /* line 136, dev/sass/style.css */
+  /* line 161, dev/sass/style.css */
   .main-wrapper {
     background-position: 335px -74px;
     background-attachment: relative;
   }
-  /* line 139, dev/sass/style.css */
+  /* line 164, dev/sass/style.css */
   .aboutMe__circle {
     width: 140px;
     left: -39px;
@@ -215,28 +254,28 @@
 }
 
 @media (max-width: 768px) {
-  /* line 144, dev/sass/style.css */
+  /* line 169, dev/sass/style.css */
   .main-wrapper {
     background: none;
   }
-  /* line 146, dev/sass/style.css */
+  /* line 171, dev/sass/style.css */
   .headerContainer__imgLogo {
     width: 230px;
   }
-  /* line 148, dev/sass/style.css */
+  /* line 173, dev/sass/style.css */
   .photoContainer__img {
     border: 20px solid #0fbf61;
     background-color: #fff;
     box-shadow: 0 0 5px 0 #fff;
   }
-  /* line 152, dev/sass/style.css */
+  /* line 177, dev/sass/style.css */
   .aboutMe__circle {
     display: none;
   }
 }
 
 @media (max-width: 736px) {
-  /* line 156, dev/sass/style.css */
+  /* line 181, dev/sass/style.css */
   .btnHire,
   .btnExplore {
     font-size: 1.2rem;
@@ -244,34 +283,34 @@
 }
 
 @media (max-width: 575.98px) {
-  /* line 161, dev/sass/style.css */
+  /* line 186, dev/sass/style.css */
   .headerContainer__imgLogo {
     width: 150px;
   }
-  /* line 163, dev/sass/style.css */
+  /* line 188, dev/sass/style.css */
   .photoContainer {
     background-color: #0fbf61;
     padding: 1rem 0;
   }
-  /* line 166, dev/sass/style.css */
+  /* line 191, dev/sass/style.css */
   .photoContainer__img {
     background-color: gray;
     border: 20px solid white;
     box-shadow: 0 0 5px 0 #fff;
   }
-  /* line 170, dev/sass/style.css */
+  /* line 195, dev/sass/style.css */
   .aboutMe__circle {
     display: none;
   }
-  /* line 172, dev/sass/style.css */
+  /* line 197, dev/sass/style.css */
   .progressbar__containerCircleProgress, .progressbar__btnView {
     display: none;
   }
-  /* line 174, dev/sass/style.css */
+  /* line 199, dev/sass/style.css */
   .progressbar__titlePorcentaje {
     margin-bottom: 0;
   }
-  /* line 176, dev/sass/style.css */
+  /* line 201, dev/sass/style.css */
   .progressbar__sizeTitlePorcentaje {
     height: 30px;
   }
