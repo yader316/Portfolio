@@ -26,7 +26,7 @@
                 </li>
                 <li class="nav-item"><a class="nav-link text-capitalize" href="#contact">Contact Me </a></li>
               </ul>
-              <ul class="nav justify-content-end d-md-none d-lg-block">
+              <ul class="nav d-lg-block justify-content-lg-end justify-content-md-start">
                 <li class="nav-item">
                   <button class="btn btn-link" type="button" data-toggle="popover" data-trigger="focus" data-placement="left" title="Email" data-content="yadtais316@gmail.com"><img src="public/img/icon/gmail.png" alt="gmail icon"/></button>
                 </li>
@@ -43,11 +43,13 @@
       </header><br>
       <div class="container">
         <section class="row"> 
-          <div class="col-xs-12 col-sm-6 col-md-6"><a class="btn btn-success btn-lg disabled marginBottom" href="#">Welcome! I'M</a>
-            <h1 class="text-capitalize">yader mendoza</h1>
-            <h3 class="marginBottom text-capitalize"><ins>web developer</ins></h3>
-            <p class="marginBottom"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div class="container marginBottom"> <a class="btn btn-outline-success text-success btn-lg btnHire text-capitalize mr-3" type="button">Hire Me</a><a class="btn btn-outline-success text-success btn-lg btnExplore text-capitalize" type="button">Explore</a></div>
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="container"><a class="btn btn-success btn-lg disabled marginBottom" href="#">Welcome! I'M</a>
+              <h1 class="text-capitalize">yader mendoza</h1>
+              <h3 class="marginBottom text-capitalize"><ins>web developer</ins></h3>
+              <p class="marginBottom"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="container marginBottom"> <a class="btn btn-outline-success text-success btn-lg btnHire text-capitalize mr-3" href="#contact" type="button">Hire Me</a><a class="btn btn-outline-success text-success btn-lg btnExplore text-capitalize" href="#projects" type="button">Explore</a></div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6">
             <div class="photoContainer d-flex-justifyCenter"><img class="photoContainer__img" src="public/img/foto.png" alt="profile picture"></div>
@@ -277,7 +279,9 @@
                 <label class="contactMe__label" for="formTextarea">Write to me instantly I will answer</label>
                 <textarea class="form-control contactMe__txtArea" id="formTextarea" rows="3"></textarea>
               </div>
-              <button class="btn btn-success" type="submit">Send</button>
+              <div class="form-group d-flex justify-content-end">
+                <button class="btn btn-success" type="submit">Send</button>
+              </div>
             </form>
           </div>
         </div>

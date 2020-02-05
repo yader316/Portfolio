@@ -25,7 +25,7 @@
   background: {
     size: 80%;
     repeat: no-repeat;
-    position: 660px 88%;
+    position: 660px 78%;
     
   };
   padding-bottom: 4rem;
@@ -103,7 +103,7 @@
     width: 100%;
     padding: 1rem;
     margin-top: 2rem;
-    box-shadow: 0 0 5px 1px gray;
+    box-shadow: 0 0 3px 1px gray;
   }
   &__txtArea{
 
@@ -128,7 +128,7 @@
 @media (max-width: 1199.98px) { 
   .main-wrapper{
     background: {
-      size: 100%;
+      size: 100%; 
       position: 547px 83%;
     };
   }
@@ -138,7 +138,7 @@
   .main-wrapper{
     background: {
       size: 100%;
-      position: 488px 98%;
+      position: 478px -108px;
     };
   }
 }
@@ -146,8 +146,7 @@
 @media (max-width: 991.98px) { 
   .main-wrapper{
     background: {
-      position: 437px 158%;
-      attachment: relative;
+      position: 437px -195px;
     };
   }
   .photoContainer{
@@ -166,8 +165,8 @@
 @media (max-width: 823px) { 
   .main-wrapper{
     background: {
-      position: 335px -74px;;
-      attachment: relative;
+      size: 120%;
+      position: 335px -180px;;
     };
   }
   .aboutMe{

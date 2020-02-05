@@ -91,7 +91,7 @@
   background-image: url("../../public/img/elipse2.png");
   background-size: 80%;
   background-repeat: no-repeat;
-  background-position: 660px 88%;
+  background-position: 660px 78%;
   padding-bottom: 4rem;
 }
 
@@ -183,7 +183,7 @@
   width: 100%;
   padding: 1rem;
   margin-top: 2rem;
-  box-shadow: 0 0 5px 1px gray;
+  box-shadow: 0 0 3px 1px gray;
 }
 
 /* line 127, dev/sass/style.css */
@@ -219,34 +219,33 @@
   /* line 146, dev/sass/style.css */
   .main-wrapper {
     background-size: 100%;
-    background-position: 488px 98%;
+    background-position: 478px -108px;
   }
 }
 
 @media (max-width: 991.98px) {
   /* line 151, dev/sass/style.css */
   .main-wrapper {
-    background-position: 437px 158%;
-    background-attachment: relative;
+    background-position: 437px -195px;
   }
-  /* line 154, dev/sass/style.css */
+  /* line 153, dev/sass/style.css */
   .photoContainer__img {
     width: 85%;
     height: 335px;
   }
-  /* line 157, dev/sass/style.css */
+  /* line 156, dev/sass/style.css */
   .aboutMe__subTitle {
     font-size: 3rem;
   }
 }
 
 @media (max-width: 823px) {
-  /* line 161, dev/sass/style.css */
+  /* line 160, dev/sass/style.css */
   .main-wrapper {
-    background-position: 335px -74px;
-    background-attachment: relative;
+    background-size: 120%;
+    background-position: 335px -180px;
   }
-  /* line 164, dev/sass/style.css */
+  /* line 163, dev/sass/style.css */
   .aboutMe__circle {
     width: 140px;
     left: -39px;
@@ -254,28 +253,28 @@
 }
 
 @media (max-width: 768px) {
-  /* line 169, dev/sass/style.css */
+  /* line 168, dev/sass/style.css */
   .main-wrapper {
     background: none;
   }
-  /* line 171, dev/sass/style.css */
+  /* line 170, dev/sass/style.css */
   .headerContainer__imgLogo {
     width: 230px;
   }
-  /* line 173, dev/sass/style.css */
+  /* line 172, dev/sass/style.css */
   .photoContainer__img {
     border: 20px solid #0fbf61;
     background-color: #fff;
     box-shadow: 0 0 5px 0 #fff;
   }
-  /* line 177, dev/sass/style.css */
+  /* line 176, dev/sass/style.css */
   .aboutMe__circle {
     display: none;
   }
 }
 
 @media (max-width: 736px) {
-  /* line 181, dev/sass/style.css */
+  /* line 180, dev/sass/style.css */
   .btnHire,
   .btnExplore {
     font-size: 1.2rem;
@@ -283,34 +282,34 @@
 }
 
 @media (max-width: 575.98px) {
-  /* line 186, dev/sass/style.css */
+  /* line 185, dev/sass/style.css */
   .headerContainer__imgLogo {
     width: 150px;
   }
-  /* line 188, dev/sass/style.css */
+  /* line 187, dev/sass/style.css */
   .photoContainer {
     background-color: #0fbf61;
     padding: 1rem 0;
   }
-  /* line 191, dev/sass/style.css */
+  /* line 190, dev/sass/style.css */
   .photoContainer__img {
     background-color: gray;
     border: 20px solid white;
     box-shadow: 0 0 5px 0 #fff;
   }
-  /* line 195, dev/sass/style.css */
+  /* line 194, dev/sass/style.css */
   .aboutMe__circle {
     display: none;
   }
-  /* line 197, dev/sass/style.css */
+  /* line 196, dev/sass/style.css */
   .progressbar__containerCircleProgress, .progressbar__btnView {
     display: none;
   }
-  /* line 199, dev/sass/style.css */
+  /* line 198, dev/sass/style.css */
   .progressbar__titlePorcentaje {
     margin-bottom: 0;
   }
-  /* line 201, dev/sass/style.css */
+  /* line 200, dev/sass/style.css */
   .progressbar__sizeTitlePorcentaje {
     height: 30px;
   }
