@@ -8,10 +8,10 @@ mixin Header
         button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbar-1") #[span.navbar-toggler-icon]
         .collapse.navbar-collapse#navbar-1
           ul.navbar-nav.mr-auto
-            +Items('Home','#home')
-            +Items('Projects','#projects')
-            +MenuDropdown('About Me','Professional Skills','Personal References','CV Download','#studies','#testimonial','public/documen/cv.pdf')
-            +Items('Contact Me','#contact')
+            li.nav-item: a(href=`index.html`).nav-link.text-capitalize inicio 
+            li.nav-item: a(href=`#projects`).nav-link.text-capitalize proyectos 
+            +MenuDropdown('sobre mí ','habilidades','referencias','descargar CV','#studies','#testimonial','public/documen/cv.pdf')
+            li.nav-item: a(href=`#contact`).nav-link.text-capitalize contacto 
           ul.nav.d-lg-block.justify-content-lg-end.justify-content-md-start
             li.nav-item
               button(

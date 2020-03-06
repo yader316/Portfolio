@@ -2,33 +2,37 @@ mixin contactMe
   .contactMe.row
     .contactMe__sendMessenger.container.col-lg-6.col-xs-12.marginBottom
       .contactMe__titleContainer.marginBottom
-        h1.display-1.contactMe__title let's talk
-        h2.contactMe__subTitle call me or send me a message
+        h1.contactMe__title contactame
+        h5.contactMe__subTitle Llámame o envíame un mensaje
       .contactMe__numberContainer.marginBottom
         .contactMe__numberContainer
-          h5 #[img(src=`public/img/icon/phone.png`, alt=`icon html` class="mr-3")] 
-            | 8418-1496 C.
-            | 8326-1118 M. 
-          h5 #[img(src=`public/img/icon/email.png`, alt=`icon html` class="mr-3")] yadtais316@gmail.com
+          .d-flex.mb-4
+            img(src=`public/img/icon/phone.png`, alt=`icon html` class="mr-3").align-self-center
+            h5.text-capitalize.flex-grow-1 
+              | 8418-1496 claro
+              br
+              | 8326-1118 movistar 
+          .d-flex.mb-4
+            img(src=`public/img/icon/email.png`, alt=`icon html` class="mr-3").align-self-center
+            h5.flex-grow-1 yadtais316@gmail.com
       .contactMe__form
         form(action="" method="method")
           .form-group
-            label(for="InputEmail").contactMe__label Adress e-mail
-            input(type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Adress e-mail")
-            small(id="emailHelp" class="form-text text-muted") We'll never share your email with anyone else.
+            label(for="InputEmail").contactMe__label.text-capitalize correo electronico
+            input(type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="ejemplo@correo.com")
+            small(id="emailHelp" class="form-text text-muted") Nunca compartiremos su correo electrónico con nadie más.
           .form-group
-            label(for="formOption").contactMe__label work issues
+            label(for="formOption").contactMe__label.text-capitalize oferta de trabajo
             select#formOption.form-control(name="").text-capitalize
-              option(selected).contactMe__label what are you asking me for
-              option(value="").contactMe__label internship
-              option(value="").contactMe__label working 
-              option(value="").contactMe__label personal project
-
+              option(selected).contactMe__label en que puedo servirle
+              option(value="").contactMe__label pasantia
+              option(value="").contactMe__label trabajo permanente 
+              option(value="").contactMe__label proyecto de trabajo
           .form-group
-            label(for="formTextarea").contactMe__label Write to me instantly I will answer
-            textarea(class="form-control" id="formTextarea" rows="3").contactMe__txtArea
+            label(for="formTextarea").contactMe__label mensaje
+            textarea(class="form-control" id="formTextarea" rows="3" placeholder="Escríbeme al instante, te responderé").contactMe__txtArea
           .form-group.d-flex.justify-content-end
-            button(type="submit" class="btn btn-success") Send
+            button(type="submit" class="btn btn-success").text-capitalize enviar
     .contactMe__imgContainer.container.col-lg-6.col-xs-12
       img(src="public/img/person2.png", alt="alt").contactMe__img.mb-3
       h2.text-capitalize.text-center yader mendoza

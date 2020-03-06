@@ -5,7 +5,7 @@ append config
 prepend styles
 //-  link de estilo
 block content
-  main.main-wrapper#home
+  main.main-wrapper
     +scrollTop
     +Header
     br
@@ -13,13 +13,13 @@ block content
       section.row 
         .col-xs-12.col-sm-6.col-md-6
           .container
-            a(href="#").btn.btn-success.btn-lg.disabled.marginBottom Welcome! I'M
+            a.btn.btn-success.btn-lg.disabled.marginBottom.text-uppercase ¡bienvenido! soy
             h1.text-capitalize yader mendoza
-            h3.marginBottom.text-capitalize: ins web developer
-            p.marginBottom  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            h3.marginBottom.text-capitalize: ins desarrollador web
+            p.marginBottom Contribuir al diseño y desarrollo de sitios web y aplicaciones web, de acuerdo con mis habilidades, conocimientos y experiencia.
           .container.marginBottom 
-            a(href="#contact" type="button").btn.btn-outline-success.text-success.btn-lg.btnHire.text-capitalize.mr-3 Hire Me
-            a(href="#projects" type="button").btn.btn-outline-success.text-success.btn-lg.btnExplore.text-capitalize Explore
+            a(href="#contact" type="button").btn.btn-outline-success.text-success.btn-lg.btnHire.text-capitalize.mr-3 contratarme
+            a(href="#projects" type="button").btn.btn-outline-success.text-success.btn-lg.btnExplore.text-capitalize Explorar
         .col-xs-12.col-sm-6.col-md-6
           .photoContainer.d-flex-justifyCenter
             img(src="public/img/foto.png", alt="profile picture").photoContainer__img
@@ -29,56 +29,57 @@ block content
       .col-xs-12.col-sm-12.col-md-6.aboutMe__backgroundPoint
         img(src="public/img/person2.png", alt="photo").container.aboutMe__img
       .col-xs-12.col-sm-12.col-md-6.aboutMe__information
-          a(href="#").btn.btn-success.btn-lg.disabled.marginBottom.aboutMe__headerTitle.text-capitalize about me
-          h1.aboutMe__subTitle.marginBottom.display-1.text-secondary.text-uppercase who am i
+          a.btn.btn-success.btn-lg.disabled.marginBottom.aboutMe__headerTitle.text-capitalize sobre mí
+          h1.aboutMe__subTitle.marginBottom.display-3.text-secondary.text-uppercase quién soy
           .aboutMe__paragraphContainer.marginBottom
             p 
-            | !! My full name is Yader Alexander Mendoza Balmaceda, I am 27 years old, currently I am dedicated to developing a website like Frontend, I live in Managua - Nicaragua.
-            p 
-            | Profile:
-            br
-            | Contribute to the design and development of website and web applications, according to my skills, knowledge and experience.
-          a(href="public/documen/cv.pdf" download="CV-Yader-Mendoza" type="button").btn.btn-success.btn-lg.text-capitalize download CV
+            | !! Mi nombre completo es Yader Alexander Mendoza Balmaceda, tengo 27 años, actualmente me dedico a desarrollar sitio web como Frontend, vivo en Managua - Nicaragua.
+          a(href="public/documen/cv.pdf" download="CV-Yader-Mendoza" type="button").btn.btn-success.btn-lg.text-capitalize descargar CV
   section.container.progressbar__container.marginBottomContainer#studies
-    h1.text-capitalize professional skills
+    h1.text-capitalize habilidades profesionales
     .dropdown-divider.marginBottom
     .row.progressbar__containerCircleProgress
-      +ProgressBar('HTML5','html-5.png','0.85')
-      +ProgressBar('CSS3','css-3.png','0.85')
+      +ProgressBar('HTML5','html-5.png','0.90')
+      +ProgressBar('CSS3','css-3.png','0.90')
       +ProgressBar('JavaScript','js.png','0.70','collapse d-md-block d-lg-block','collapseProgress')
-      +ProgressBar('PUG','pug.png','0.85','collapse d-lg-block','collapseProgress')
-      +ProgressBar('SASS','sass.png','0.85','collapse','collapseProgress')
-      +ProgressBar('REACT','react.png','0.50','collapse','collapseProgress')
-      +ProgressBar('BOOTSTRAP','bootstrap.png','0.70','collapse','collapseProgress')
-      +ProgressBar('GIT','git.png','0.60','collapse','collapseProgress')
-      +ProgressBar('GULP','gulp.png','0.60','collapse','collapseProgress')
+      +ProgressBar('PUG','pug.png','0.90','collapse d-lg-block','collapseProgress')
+      +ProgressBar('SASS','sass.png','0.90','collapse','collapseProgress')
+      +ProgressBar('REACT','react.png','0.70','collapse','collapseProgress')
+      +ProgressBar('BOOTSTRAP','bootstrap.png','0.85','collapse','collapseProgress')
+      +ProgressBar('Adobe XD','adobexd.png','0.85','collapse','collapseProgress')
+      +ProgressBar('GIT','git.png','0.70','collapse','collapseProgress')
+      +ProgressBar('GULP','gulp.png','0.70','collapse','collapseProgress')
     .row.d-block.d-sm-none
       .progressbar__containerBarra.container
-        +progressBarra('HTML5','85')
-        +progressBarra('CSS3','85')
+        +progressBarra('HTML5','90')
+        +progressBarra('CSS3','90')
         +progressBarra('JavaScript','70')
-        +progressBarra('PUG','85')
-        +progressBarra('SASS','85','collapse','collapseProgress')
-        +progressBarra('REACT','50','collapse','collapseProgress')
-        +progressBarra('BOOTSTRAP','70','collapse','collapseProgress')
-        +progressBarra('GIT','60','collapse','collapseProgress')
-        +progressBarra('GULP','60','collapse','collapseProgress')
+        +progressBarra('PUG','90')
+        +progressBarra('SASS','90','collapse','collapseProgress')
+        +progressBarra('REACT','70','collapse','collapseProgress')
+        +progressBarra('BOOTSTRAP','85','collapse','collapseProgress')
+        +progressBarra('Adobe XD','85','collapse','collapseProgress')
+        +progressBarra('GIT','70','collapse','collapseProgress')
+        +progressBarra('GULP','70','collapse','collapseProgress')
     .dropdown-divider
-    span: a(class="btn btn-outline-success marginBottom" data-toggle="collapse" href="#collapseProgress" role="button" aria-expanded="false" aria-controls="collapseExample" onClick="Circlle('.progressbar__round');") View all
-  section.container.projectContainer.marginBottomContainer#projects
-    h1.text-center.text-capitalize practice professionals
-    .dropdown-divider.marginBottom
-    .row.projectContainer__backgroundPointerImage
-      +card('ENICER','pages-enicer.png','https://yader316.github.io/enicer/')
-      +card('SLIYP','pages-slip.png','https://yader316.github.io/Holidays/public/','collapse d-sm-block','collapseCard')
-      +card('Airmusic','pages-airmusic.png','https://yader316.github.io/airmusic/','collapse d-md-block ','collapseCard')
-      +card('Education','pages-education.png','https://yader316.github.io/Education/','collapse d-lg-block','collapseCard')
-      +card('Smart Technology','pages-smart.png','https://yader316.github.io/smart-technology/public/','collapse','collapseCard')
-    .dropdown-divider
-    span: a(class="btn btn-outline-success" data-toggle="collapse" href="#collapseCard" role="button" aria-expanded="false" aria-controls="collapseExample").text-capitalize view all
-  section#testimonial.testimonialContainer.marginBottomContainer
-    h1.display-4.bg-success.text-white.text-center.testimonialContainer__title.text-capitalize personal references
-    +carouselTestimonial
+    span: a(class="btn btn-outline-success text-capitalize marginBottom" data-toggle="collapse" href="#collapseProgress" role="button" aria-expanded="false" aria-controls="collapseExample" onClick="Circlle('.progressbar__round');") ver más
+  section.container-fluid.projectContainer.marginBottomContainer#projects
+    img(src="public/img/background-point.png", alt="").projectContainer__img
+    .container
+      h1.text-center.text-capitalize práctica profesionales
+      .dropdown-divider.marginBottom
+      .row.projectContainer__backgroundPointerImage
+        +card('ENICER','pages-enicer.png','https://yader316.github.io/enicer/')
+        +card('SLIYP','pages-slip.png','https://yader316.github.io/Holidays/public/','collapse d-sm-block','collapseCard')
+        +card('Airmusic','pages-airmusic.png','https://yader316.github.io/airmusic/','collapse d-md-block ','collapseCard')
+        +card('Education','pages-education.png','https://yader316.github.io/Education/','collapse d-lg-block','collapseCard')
+        +card('Smart Technology','pages-smart.png','https://yader316.github.io/smart-technology/public/','collapse','collapseCard')
+      .dropdown-divider
+      span: a(class="btn btn-outline-success" data-toggle="collapse" href="#collapseCard" role="button" aria-expanded="false" aria-controls="collapseExample").text-capitalize ver más
+  section#testimonial.testimonialContainer.marginBottomContainer(style="background-color: #dee2e6;")
+    h1.display-4.bg-success.text-white.text-center.testimonialContainer__title.text-capitalize.pt-4.pb-4 referencias personales
+    .pt-4.pb-4
+      +CardReferencia
   section.container.mb-5#contact
     +contactMe   
   footer.footerContainer
@@ -86,10 +87,9 @@ block content
       .d-lg-flex.justify-content-lg-between.d-xs-flex.d-xs-flex-column.text-center
         .footerContainer__logo.mb-5
           img(src="public/img/logo.png" alt="logo")
-        .footerContainer__thanks.mb-5
-          h1.text-secondary.text-capitalize thanks for watching
-          h4.text-primary.text-capitalize if you like it please appreciate it!
-        .footerContainer__redes.mb-5
+        .footerContainer__thanks.mb-5.align-self-center 
+          h1.text-secondary.text-capitalize gracias por visitar mi sitio web
+        .footerContainer__redes.pb-4
           .d-flex.justify-content-center
             button(
               type="button" 

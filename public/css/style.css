@@ -157,15 +157,15 @@
 
 /* line 107, dev/sass/style.css */
 .projectContainer {
+  position: relative;
   text-align: center;
 }
 
-/* line 109, dev/sass/style.css */
-.projectContainer__backgroundPointerImage {
-  background-image: url("../../public/img/background-point.png");
-  background-repeat: no-repeat;
-  background-position: center right;
-  padding-bottom: 3rem;
+/* line 110, dev/sass/style.css */
+.projectContainer__img {
+  position: absolute;
+  right: 0;
+  top: 80px;
 }
 
 /* line 115, dev/sass/style.css */
@@ -312,5 +312,10 @@
   /* line 200, dev/sass/style.css */
   .progressbar__sizeTitlePorcentaje {
     height: 30px;
+  }
+  /* line 202, dev/sass/style.css */
+  .projectContainer__img {
+    width: 50%;
+    top: 100px;
   }
 }
