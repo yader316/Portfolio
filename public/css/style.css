@@ -117,25 +117,26 @@
 .photoContainer__img {
   width: 70%;
   height: 400px;
-  background-color: gray;
-  border: 20px solid white;
+  background-color: #dee2e6;
+  border: 9px solid white;
+  box-shadow: 0 0 4px 0 #dee2e6;
   border-radius: 50%;
 }
 
-/* line 88, dev/sass/style.css */
+/* line 89, dev/sass/style.css */
 .aboutMe {
   position: relative;
   margin-top: 3rem;
 }
 
-/* line 91, dev/sass/style.css */
+/* line 92, dev/sass/style.css */
 .aboutMe__backgroundPoint {
   background-image: url("../../public/img/background-point.png");
   background-repeat: no-repeat;
   background-position: top right;
 }
 
-/* line 95, dev/sass/style.css */
+/* line 96, dev/sass/style.css */
 .aboutMe__circle {
   width: 220px;
   position: absolute;
@@ -144,44 +145,43 @@
   z-index: 99;
 }
 
-/* line 101, dev/sass/style.css */
+/* line 102, dev/sass/style.css */
 .aboutMe__img {
   margin-top: 2rem;
   box-shadow: 0 0 5px 1px gray;
 }
 
-/* line 104, dev/sass/style.css */
+/* line 105, dev/sass/style.css */
 .aboutMe__information {
   padding: 3rem;
 }
 
-/* line 107, dev/sass/style.css */
+/* line 108, dev/sass/style.css */
 .projectContainer {
   position: relative;
   text-align: center;
 }
 
-/* line 110, dev/sass/style.css */
+/* line 111, dev/sass/style.css */
 .projectContainer__img {
   position: absolute;
   right: 0;
   top: 80px;
 }
 
-/* line 115, dev/sass/style.css */
+/* line 116, dev/sass/style.css */
 .testimonialContainer__title {
   margin-bottom: 0;
 }
 
-/* line 118, dev/sass/style.css */
+/* line 119, dev/sass/style.css */
 .contactMe__imgContainer {
   box-shadow: 0 0 5px 1px gray;
 }
 
-/* line 121, dev/sass/style.css */
+/* line 122, dev/sass/style.css */
 .contactMe__img {
   width: 100%;
-  padding: 1rem;
   margin-top: 2rem;
   box-shadow: 0 0 3px 1px gray;
 }

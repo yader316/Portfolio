@@ -44,8 +44,15 @@
   &__img{
     width: 70%;
     height: 400px;
-    background-color: gray;
-    border: 20px solid white;
+    // background-image: imgUrl('code.jpeg');
+    // background: {
+    //   size: cover;
+    //   repeat: no-repeat;
+    //   position: top center;
+    // };
+    background-color: #dee2e6;
+    border: 9px solid white;
+    box-shadow: 0 0 4px 0 #dee2e6;
     border-radius: 50%;
   }
 }
@@ -98,7 +105,6 @@
   }
   &__img{
     width: 100%;
-    padding: 1rem;
     margin-top: 2rem;
     box-shadow: 0 0 3px 1px gray;
   }
