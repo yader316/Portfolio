@@ -1,8 +1,8 @@
-mixin MenuDropdown(item,subItems1,subItems2,subItems3, link1,link2,link3)
+mixin MenuDropdown(item,subItems1,subItems3, link1,link3)
   li.nav-item.dropdown 
     a.text-capitalize(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false").nav-link.dropdown-toggle#navbarDropdown #{item}
     div(class="dropdown-menu" aria-labelledby="navbarDropdown")
       a(href=`${link1}`).dropdown-item.text-capitalize #{subItems1}
-      a(href=`${link2}`).dropdown-item.text-capitalize #{subItems2}
+      //- a(href=`${link2}`).dropdown-item.text-capitalize #{subItems2}
       a(href=`${link3}` download="CV-Yader-Mendoza").dropdown-item.text-capitalize #{subItems3}
 

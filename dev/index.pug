@@ -1,7 +1,7 @@
 extends include/template
 
 append config
-  -siteName='Home'
+  //- configuraciones
 prepend styles
 //-  link de estilo
 block content
@@ -16,7 +16,7 @@ block content
             a.btn.btn-success.btn-lg.disabled.marginBottom.text-uppercase ¡bienvenido! soy
             h1.text-capitalize yader mendoza
             h3.marginBottom.text-capitalize: ins desarrollador web
-            p.marginBottom Contribuir al diseño y desarrollo de sitios web y aplicaciones web, de acuerdo con mis habilidades, conocimientos y experiencia.
+            p.marginBottom Me gusta contribuir al diseño y desarrollo de sitios web y aplicaciones web, de acuerdo con mis habilidades, conocimientos y experiencia.
           .container.marginBottom 
             a(href="#contact" type="button").btn.btn-outline-success.text-success.btn-lg.btnHire.text-capitalize.mr-3 contratarme
             a(href="#projects" type="button").btn.btn-outline-success.text-success.btn-lg.btnExplore.text-capitalize Explorar
@@ -33,32 +33,32 @@ block content
           h1.aboutMe__subTitle.marginBottom.display-3.text-secondary.text-uppercase quién soy
           .aboutMe__paragraphContainer.marginBottom
             p 
-            | !! Mi nombre completo es Yader Alexander Mendoza Balmaceda, tengo 27 años, actualmente me dedico a desarrollar sitio web como Frontend, vivo en Managua - Nicaragua.
+            | !! Mi nombre completo es Yader Alexander Mendoza Balmaceda, tengo 27 años, actualmente me dedico a desarrollar sitio web como Frontend, soy estudiante activo de la carrera Ingeniería en Sistemas, curso mi ultimo año de dicha carrera, vivo en Managua - Nicaragua.
           a(href="public/documen/cv.pdf" download="CV-Yader-Mendoza" type="button").btn.btn-success.btn-lg.text-capitalize descargar CV
   section.container.progressbar__container.marginBottomContainer#studies
     h1.text-capitalize habilidades profesionales
     .dropdown-divider.marginBottom
     .row.progressbar__containerCircleProgress
-      +ProgressBar('HTML5','html-5.png','0.90')
-      +ProgressBar('CSS3','css-3.png','0.90')
+      +ProgressBar('HTML5','html-5.png','0.80')
+      +ProgressBar('CSS3','css-3.png','0.80')
       +ProgressBar('JavaScript','js.png','0.70','collapse d-md-block d-lg-block','collapseProgress')
-      +ProgressBar('PUG','pug.png','0.90','collapse d-lg-block','collapseProgress')
-      +ProgressBar('SASS','sass.png','0.90','collapse','collapseProgress')
+      +ProgressBar('PUG','pug.png','0.80','collapse d-lg-block','collapseProgress')
+      +ProgressBar('SASS','sass.png','0.80','collapse','collapseProgress')
       +ProgressBar('REACT','react.png','0.70','collapse','collapseProgress')
-      +ProgressBar('BOOTSTRAP','bootstrap.png','0.85','collapse','collapseProgress')
-      +ProgressBar('Adobe XD','adobexd.png','0.85','collapse','collapseProgress')
+      +ProgressBar('BOOTSTRAP','bootstrap.png','0.80','collapse','collapseProgress')
+      +ProgressBar('Adobe XD','adobexd.png','0.80','collapse','collapseProgress')
       +ProgressBar('GIT','git.png','0.70','collapse','collapseProgress')
       +ProgressBar('GULP','gulp.png','0.70','collapse','collapseProgress')
     .row.d-block.d-sm-none
       .progressbar__containerBarra.container
-        +progressBarra('HTML5','90')
-        +progressBarra('CSS3','90')
+        +progressBarra('HTML5','80')
+        +progressBarra('CSS3','80')
         +progressBarra('JavaScript','70')
-        +progressBarra('PUG','90')
-        +progressBarra('SASS','90','collapse','collapseProgress')
+        +progressBarra('PUG','80')
+        +progressBarra('SASS','80','collapse','collapseProgress')
         +progressBarra('REACT','70','collapse','collapseProgress')
-        +progressBarra('BOOTSTRAP','85','collapse','collapseProgress')
-        +progressBarra('Adobe XD','85','collapse','collapseProgress')
+        +progressBarra('BOOTSTRAP','80','collapse','collapseProgress')
+        +progressBarra('Adobe XD','80','collapse','collapseProgress')
         +progressBarra('GIT','70','collapse','collapseProgress')
         +progressBarra('GULP','70','collapse','collapseProgress')
     .dropdown-divider
@@ -69,17 +69,17 @@ block content
       h1.text-center.text-capitalize práctica profesionales
       .dropdown-divider.marginBottom
       .row.projectContainer__backgroundPointerImage
-        +card('ENICER','pages-enicer.png','https://yader316.github.io/enicer/')
+        +card('Smart Technology','pages-smart.png','https://yader316.github.io/smart-technology.nic/')
         +card('SLIYP','pages-slip.png','https://yader316.github.io/Holidays/public/','collapse d-sm-block','collapseCard')
-        +card('Airmusic','pages-airmusic.png','https://yader316.github.io/airmusic/','collapse d-md-block ','collapseCard')
+        +card('ENICER','pages-enicer.png','https://yader316.github.io/enicer/','collapse d-md-block ','collapseCard')
         +card('Education','pages-education.png','https://yader316.github.io/Education/','collapse d-lg-block','collapseCard')
-        +card('Smart Technology','pages-smart.png','https://yader316.github.io/smart-technology/public/','collapse','collapseCard')
+        +card('Airmusic','pages-airmusic.png','https://yader316.github.io/airmusic/','collapse','collapseCard')
       .dropdown-divider
       span: a(class="btn btn-outline-success" data-toggle="collapse" href="#collapseCard" role="button" aria-expanded="false" aria-controls="collapseExample").text-capitalize ver más
-  section#testimonial.testimonialContainer.marginBottomContainer(style="background-color: #dee2e6;")
-    h1.display-4.bg-success.text-white.text-center.testimonialContainer__title.text-capitalize.pt-4.pb-4 referencias personales
-    .pt-4.pb-4
-      +CardReferencia
+  //- section#testimonial.testimonialContainer.marginBottomContainer(style="background-color: #dee2e6;")
+  //-   h1.display-4.bg-success.text-white.text-center.testimonialContainer__title.text-capitalize.pt-4.pb-4 referencias personales
+  //-   .pt-4.pb-4
+  //-     +CardReferencia
   section.container.mb-5#contact
     +contactMe   
   footer.footerContainer
